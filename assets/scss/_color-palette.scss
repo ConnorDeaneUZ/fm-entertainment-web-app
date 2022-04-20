@@ -1,0 +1,24 @@
+//colour palette
+
+$colorPaletteSettings: (
+  primary: #11141F,
+  secondary: #161D2E,
+  tertiary: #FD4547,
+  
+  core-light-grey: #DEE2E6,
+  core-dark-grey: #535762,
+
+  core-white: #fff
+
+);
+
+
+
+@function colorPaletteSetting($key) {
+  @if map-has-key($colorPaletteSettings, $key) {
+    @return map-get($colorPaletteSettings, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colorPaletteSettings.";
+  @return null;
+}
