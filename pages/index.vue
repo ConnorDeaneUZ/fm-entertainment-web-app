@@ -1,6 +1,6 @@
 <template>
 <section class="body">
-<p class="body-heading">test</p>
+<p class="body-heading">development</p>
 </section>
 </template>
 
