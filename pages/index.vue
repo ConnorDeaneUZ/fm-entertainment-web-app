@@ -1,6 +1,10 @@
 <template>
 <section class="homepage-container">
 
+  <nav-bar />
+  
+  <div class="movies-container">
+
   <movie-card v-for="movie in movies" :key="movie.index"
   :title="movie.title"
   :year="movie.year"
@@ -9,17 +13,20 @@
   :poster="movie.poster"
   />
 
+  </div>
 </section>
 </template>
 
 <script>
 import MovieCard from '../components/Global/MovieCard/MovieCard.vue'
+import NavBar from '../components/Global/NavBar/NavBar.vue'
 
 export default {
   name: 'IndexPage',
 
   components: {
-    MovieCard
+    MovieCard,
+    NavBar
   },
 
   data: () => ({
@@ -64,6 +71,38 @@ export default {
       genre: ['drama'],
       poster: "https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_.jpg",
     },
+    {
+      title: "Bojack Horseman",
+      year: "2014",
+      rated: "18",
+      runtime: "25 min",
+      genre: ['comedy'],
+      poster: "https://resizing.flixster.com/cWZ5-uNNHt23M-c7t-fei9gm9Bg=/ems.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vUlRUVjIwODUyNS53ZWJw",
+    },
+    {
+      title: "Hereditary",
+      year: "2018",
+      rated: "15",
+      runtime: "127 min",
+      genre: ['horror'],
+      poster: "https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_FMjpg_UX1000_.jpg",
+    },
+    {
+      title: "Dune: Part One",
+      year: "2021",
+      rated: "12A",
+      runtime: "155 min",
+      genre: ['sci-fi'],
+      poster: "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+    },
+    {
+      title: "The Mandalorian",
+      year: "2019",
+      rated: "PG",
+      runtime: "40 min",
+      genre: ['fantasy'],
+      poster: "https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQ2ODg5OWZiYmJkXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg",
+    },
   ]
   })
 }
@@ -77,12 +116,16 @@ export default {
   box-sizing: border-box !important;
 }
 
-.homepage-container {
-  justify-content: center;
+.movies-container {
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 450px 450px 450px;
+}
+
+.homepage-container {
   background-color: colorPaletteSetting(primary);
+  display: flex;
+  justify-content: center;
   height: 100vh;
 }
 </style>
