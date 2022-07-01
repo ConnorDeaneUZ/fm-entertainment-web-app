@@ -2,7 +2,7 @@
   <section class="nav-bar">
     <div class="nav-bar-container">
 
-      <search-bar />
+      <!-- <search-bar /> -->
 
   <div class="nav-bar-icons">
 
@@ -10,7 +10,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
   <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
 </svg>
-<h3 class="nav-bar-home-heading">FEED</h3>
+<!-- <h3 class="nav-bar-home-heading">FEED</h3> -->
 
 </div>
 
@@ -49,10 +49,12 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 .nav-bar {
-  background-color: #0d0f19;
-  width: 400px;
+  // background-color: #0d0f19;
+  background-color: colorPaletteSetting(primary);
+  width: 120px;
   height: 100vh;
   font-family: 'Manrope', sans-serif;
+  border-radius: 30px;
 
 
   &-icons {
@@ -69,10 +71,10 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: colorPaletteSetting(secondary);
-    width: 300px;
+    width: 100px;
     height: 50px;
     border-radius: 10px;
-    border-bottom: 1px colorPaletteSetting(core-dark-grey) solid;
+    // border-bottom: 1px colorPaletteSetting(core-dark-grey) solid;
     cursor: pointer;
   }
 
@@ -83,16 +85,17 @@ export default {
 }
 
 .bi-film {
-  color: colorPaletteSetting(core-dark-grey);
+  color: colorPaletteSetting(core-white);
   cursor: pointer;
 }
 
 .bi-grid-3x3-gap-fill {
-  color: colorPaletteSetting(core-white);
+  // color: colorPaletteSetting(core-white);
+  color: colorPaletteSetting(tertiary);
 }
 
 .bi-tv {
-  color: colorPaletteSetting(core-dark-grey);
+  color: colorPaletteSetting(core-white);
   cursor: pointer;
 }
 </style>
