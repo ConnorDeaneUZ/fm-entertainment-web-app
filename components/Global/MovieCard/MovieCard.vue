@@ -64,7 +64,6 @@ export default {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    // background-color: red;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +97,6 @@ export default {
   }
 
   &-bottom {
-    // background-color: blue;
     width: 100%;
     height: 60px;
     z-index: 3;
@@ -108,7 +106,6 @@ export default {
     display: flex;
     justify-content: space-evenly;
     color: colorPaletteSetting(core-light-grey);
-    // background-color: green;
     height: 20px;
     width: 120px;
     align-items: center;
