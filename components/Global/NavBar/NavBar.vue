@@ -6,7 +6,11 @@
 
   <div class="nav-bar-icons">
 
-<!-- Refactor code so each nav icon has a class of active which can be set to true or false -->
+<!-- 
+  - Refactor code so each nav icon has a class of active which can be set to true or false.
+  - Write a function that changes active state when icon is clicked.
+
+ -->
 
 
 <div class="nav-bar-home" :class="{'nav-bar--active': active}">

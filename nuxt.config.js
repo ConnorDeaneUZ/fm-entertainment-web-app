@@ -1,4 +1,9 @@
 export default {
+
+  target: 'static',
+  router: {
+    base: '/fm-entertainment-web-app/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'entertainment-web-app',
